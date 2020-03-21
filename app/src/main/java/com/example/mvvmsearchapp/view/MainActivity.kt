@@ -1,14 +1,10 @@
-package com.example.mvvmsearchapp
+package com.example.mvvmsearchapp.view
 
-import android.util.Log
-import androidx.lifecycle.Observer
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import kotlinx.android.synthetic.main.activity_main.*
-import org.koin.android.ext.android.inject
+import com.example.mvvmsearchapp.R
+import com.example.mvvmsearchapp.base.BaseKotlinActivity
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import com.example.mvvmsearchapp.databinding.ActivityMainBinding
+import com.example.mvvmsearchapp.viewmodel.MainViewModel
 
 class MainActivity : BaseKotlinActivity<ActivityMainBinding, MainViewModel>() {
 

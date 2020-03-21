@@ -1,4 +1,4 @@
-package com.example.mvvmsearchapp
+package com.example.mvvmsearchapp.base
 
 import androidx.lifecycle.ViewModel
 import io.reactivex.disposables.CompositeDisposable

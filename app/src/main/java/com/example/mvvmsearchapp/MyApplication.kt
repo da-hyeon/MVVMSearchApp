@@ -1,6 +1,9 @@
 package com.example.mvvmsearchapp
 
 import android.app.Application
+import com.example.mvvmsearchapp.model.DataModel
+import com.example.mvvmsearchapp.model.DataModelImpl
+import com.example.mvvmsearchapp.viewmodel.MainViewModel
 import org.koin.android.ext.android.startKoin
 import org.koin.androidx.viewmodel.ext.koin.viewModel
 import org.koin.dsl.module.module
