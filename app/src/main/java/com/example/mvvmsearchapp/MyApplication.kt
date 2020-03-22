@@ -1,6 +1,9 @@
 package com.example.mvvmsearchapp
 
 import android.app.Application
+import android.content.Context
+import android.content.pm.PackageInfo
+import com.example.mvvmsearchapp.di.myDiModule
 import com.example.mvvmsearchapp.model.DataModel
 import com.example.mvvmsearchapp.model.DataModelImpl
 import com.example.mvvmsearchapp.viewmodel.MainViewModel
@@ -13,18 +16,4 @@ class MyApplication : Application() {
         super.onCreate()
         startKoin(applicationContext , myDiModule)
     }
-
-    var modelPart = module {
-        factory<DataModel> {
-            DataModelImpl()
-        }
-    }
-
-    var viewModelPart = module {
-        viewModel {
-            MainViewModel(get())
-        }
-    }
-
-    var myDiModule = listOf(modelPart , viewModelPart)
 }
